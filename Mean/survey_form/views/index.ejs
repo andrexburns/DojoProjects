@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+</head>
+<body>
+	<form action="/result" method="post">
+		<div id="name">
+			<label for="name">full name: </label>
+			<input type="text" name="name" id="">
+		</div>
+		<div id="location">
+			<label for="location">favorite dojo location</label>
+			<select name="dojo_location">
+				<option value = "Empty">Empty</option>
+			  <option value="Seatle,_WA">Seatle, WA</option>
+			  <option value="San_Jose,_CA">San Jose, CA</option>
+			  <option value="Los_Angeles">Los Angeles</option>
+			  <option value="Canada">canada</option>
+			</select>
+		</div>
+		<div id="language">
+			<label for="language">Favorite Language: </label>
+			<select name="favorite_language">
+				<option value = "empty">empty</option>
+			  <option value="Python">Python</option>
+			  <option value="Mean">Mean</option>
+			  <option value="Ruby_On_Rails">Ruby on Rails</option>
+			  <option value="IOS">IOS</option>
+			</select>
+		</div>
+		<div id="leave a comment!!">
+			<label for="comment">comment(optional):</label>
+			<textarea name="comment"></textarea>
+		</div>
+		<input type="submit" value="enter">
+	</form>
+</body>
+</html>

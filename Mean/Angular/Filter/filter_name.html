@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>filter th names</title>
+    <script src = "bower_components/angular/angular.js" charset = "utf-8">
+    </script>
+    <script>
+      var app = angular.module('app',[]);
+      //our controller with $scope injected
+      app.controller('friendsController',['$scope',function ($scope){
+        $scope.friends = [
+          {name: 'Jack', age : 24.5, gender: 'boy'},
+          {name: 'Jerry', age: 22.7, gender: 'boy'},
+          {name: 'Joselin', age: 26.2, gender: 'girl'},
+          {name: 'Rico', age:50.3, gender: 'boy'},
+          {name: 'Joanna', age: 29, gender: 'girl'},
+          {name: 'Terry', age: 21, gender: 'boy'},
+          {name: 'Leslie', age: 23.7, gender: 'girl'},
+          {name: 'Rachel', age: 30.1, gender: 'girl'},
+          {name: 'Axi', age:28.9, gender: 'girl'},
+          {name: 'Julie', age: 32.4, gender: 'girl'}
+        ];
+      }]);
+    </script>
+  </head>
+  <body ng-app='app'>
+    <div ng-controller = 'friendsController'>
+      <form ng-submit = 'friends()'>
+      search homies: <input type = 'text' ng-model='filter_name'>
+        <input type="submit" value="add">
+      </form>
+      <ul>
+        <li ng-repeat = "friend in friends | orderBy:'name'">
+        {{friend.name}} - age {{friend.age | number:0}}, gender {{friend.gender | uppercase }}</li>
+      </ul>
+    </div>
+  </body>
+</html>
