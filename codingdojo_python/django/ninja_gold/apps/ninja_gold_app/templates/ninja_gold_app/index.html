@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ninja_gold</title>
+  </head>
+  <body>
+    <p id = "goldchest">
+      your gold: <span id = "gold">{{ request.session.gold }}</span>
+    </p>
+    <div>
+      <h3>Farm</h3>
+      <h5> (earns 10 - 20 golds) </h5>
+      <form action ="/process_money" method = "post" id = "farm">
+        {% csrf_token %}
+        <input type = "hidden" name = "action" value = "farm" />
+        <input type = "submit" value = "find gold!" >
+      </form>
+    </div>
+    <div>
+      <h3>cave</h3>
+      <h5> (earns 5-10 gold) </h5>
+      <form action = "/process_money" method = "post" id = "cave">
+        {% csrf_token %}
+        <input type = "hidden" name = "action" value = "cave" />
+        <input type = "submit" value = "find gold" >
+      </form>
+    </div>
+    <div>
+      <h3>house</h3>
+      <h5> (earns 2-5 gold) </h5>
+      <form action = "/process_money" method = "post" >
+        {% csrf_token %}
+        <input type = "hidden" name = "action" value = "house" >
+        <input type = "submit" value = "find gold!" >
+      </form>
+    </div>
+    <div>
+      <h3> casino <h3>
+      <h5> (earns/teakes 0-50 gold) </h5>
+      <form action="/process_money" method = "post" id = "casino">
+        {%csrf_token %}
+        <input type = "hidden" name = "action" value = "casino" >
+        <input type = "submit" value = "find gold" >
+      </form>
+    </div>
+    <div>
+      <p> activities: </p>
+      <div>
+        {%for entry in request.session.log %}
+          {% if entry.0 == "E" %}
+            <p class = "green"> {{entry}} </p>
+          {% else %}
+            <p class = "red"> {{ entry }} </p>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,15 @@
+*{
+margin: 0;
+}
+
+#wrapper{
+  background-color: purple;
+  margin: 3px;
+  padding: 5px;
+}
+
+#head{
+  width: 800px;
+  height: 810px;
+  background-color: violet;
+}

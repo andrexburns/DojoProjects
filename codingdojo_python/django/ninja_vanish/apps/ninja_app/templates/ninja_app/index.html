@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Disappearing Ninja</title>
+    </head>
+    <body>
+        {% load staticfiles %}
+        {% if turtle == "none" %}
+            <h1>No ninjas here</h1>
+        {% elif turtle == "ninjas" %}
+            <img src="{% static 'ninjas/images/tmnt.png' %}" charset="utf-8" alt="tmnt">
+        {% elif turtle == "blue" %}
+            <img src="{% static 'ninjas/images/leonardo.jpg' %}" charset="utf-8" alt="blue">
+        {% elif turtle == "orange" %}
+            <img src="{% static 'ninjas/images/michelangelo.jpg' %}" charset="utf-8" alt="orange">
+        {% elif turtle == "red" %}
+            <img src="{% static 'ninjas/images/raphael.jpg' %}" charset="utf-8" alt="red">
+        {% elif turtle == "purple" %}
+            <img src="{% static 'ninjas/images/donatello.jpg' %}" charset="utf-8" alt="purple">
+        {% else %}
+            <img src="{% static 'ninjas/images/notapril.jpg' %}" charset="utf-8" alt="april">
+        {% endif %}
+    </body>
+</html>

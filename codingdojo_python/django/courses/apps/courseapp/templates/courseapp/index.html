@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>courses</title>
+  </head>
+  <body>
+    <form action = "create/course" method = "post">
+      {% csrf_token %}
+      <label for = "courseadd"> course: </label>
+      <input  id = "courseadd" type = "text" name = "titleadd">
+      <label for = "detail"> description: </label>
+      <textarea id = "detail" name = "describe"></textarea>
+      <input type="submit" value="add">
+    </form>
+    <thead>
+      <tr>
+        <td>course name</td>
+        <td> Description </td>
+        <td> delete </td>
+      </tr>
+    </thead>
+    <table>
+    {% for course_name in courses %}
+      <tr>
+        <td>{{ course_name.Title }}</td>
+        <td>{{ course_name.description }}</td>
+      {% for rmvcourse in undo %}
+        <td> <button type = "delete" name = "delete">{{rmvcourse.Title}} {{rmvcourse.description}}</button></td>
+
+      </tr>
+      {% endfor %}
+    {% endfor %}
+    </table>
+  </body>
+</html>

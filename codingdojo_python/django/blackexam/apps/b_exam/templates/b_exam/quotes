@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>exam_home</title>
+  </head>
+  <body>
+    <div id = "top">
+      {% if messages %}
+        {% for message in messages %}
+        <h1{% if message.tags %} class = " {{message.tags }}" {% endif %}> {{message}} </h>
+        {% endfor %}
+      {% endif %}
+      <a href = "/add" id = "addquote"> add quote </a>
+      <a href = "/logout" id = "logout">logout</a>
+    </div>
+    <div id = "recent">
+      <h1>recent quotes</h1>
+      {% for quotes in quotes %}
+        <div>
+            <a href = "/quote/{{ review.quote.id }}">{{ review.quote.title }} </a>
+            <p><a href = "/users/{{ review.user.id }}" > {{ review.user.name }}</a> qouted: {{ review.review }}</p>
+            <p> Posted on {{ review.created_at }}
+        </div>
+
+      {% endfor %}
+    </div>
+  </body>
+</html>

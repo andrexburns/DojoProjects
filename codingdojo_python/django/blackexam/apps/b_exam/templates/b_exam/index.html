@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>black_belt</title>
+    <style rel="stylesheet" type="text/css">
+            .error{
+                color:red;
+                font-size: 24px;
+            }
+      </style>
+  </head>
+  <body>
+    {% if messages %}
+      {% for message in messages %}
+      <h1{% if messages.tags %} class = "{{message.tags}}" {% endif %}> {{message}} </h1>
+      {% endfor %}
+    {% endif %}
+    <div id = "register">
+      <h1> registration</h1>
+      <form action="/register" method = "post">
+        {% csrf_token %}
+        <label> first name: </label><input type = "text" name = "first_name"></input>
+        <label> last name: </label><input type = "text" name = "last_name"></input>
+        <label> DOB : </label><input type = "date" name = "dob"></input>
+        <label> email : </label><input type = "text" name= "email"></input>
+        <label> password: </label><input type = "text" name = "password"></input>
+        <label> confirm password: </label><input type = "text" name = "password2"></input>
+        <input type = "submit" value = "register"></input>
+      </form>
+    </div>
+    <div id = "login">
+      <h1>login</h1>
+      <form action = "/login" method = "post">
+        <label> email : </label><input type = "text" name = "email"></input>
+        <label>password: </label><input type = "text" name = "password"></input>
+        <input type = "submit" value = "login"></input>
+      </form>
+    </div>
+  </body>
+</html>

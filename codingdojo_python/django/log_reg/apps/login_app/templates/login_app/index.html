@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>login reg</title>
+  </head>
+  <body>
+    {% if messages %}
+      {% for message in messages %}
+        <p>{{message}}</p>
+      {% endfor %}
+    {% endif %}
+    <form action = '/register' method = 'post'>
+      {% csrf_token %}
+      email: <input type = "text" name = "email">
+      password:<input type = "password" name = "password">
+      confirm password: <input type = "password" name = "c_pass">
+      <input type = "submit" name = "">
+    </form>
+  </body>
+</html>
