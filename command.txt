@@ -1,0 +1,30 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Fussy\Documents\DojoAssignments>Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Fussy\Documents\DojoAssignments>
+C:\Users\Fussy\Documents\DojoAssignments>
+C:\Users\Fussy\Documents\DojoAssignments> Volume in drive C is OS
+ Volume Serial Number is F1D6-FD61
+
+ Directory of C:\Users\Fussy\Documents\DojoAssignments
+
+01/24/2017  04:55 PM    <DIR>          .
+01/24/2017  04:55 PM    <DIR>          ..
+01/24/2017  04:53 PM               137 COMMAD.TXT
+01/24/2017  04:55 PM               137 command.txt
+01/24/2017  03:51 PM    <DIR>          git
+01/23/2017  10:17 PM    <DIR>          ios
+01/23/2017  10:18 PM    <DIR>          Mean
+01/23/2017  10:17 PM    <DIR>          netcore
+01/24/2017  04:54 PM                 0 output.txt
+01/23/2017  10:11 PM    <DIR>          Python
+01/24/2017  04:49 PM                 0 readme.md
+01/23/2017  10:15 PM    <DIR>          Ruby
+01/23/2017  10:20 PM    <DIR>          WebFundamentals
+               4 File(s)            274 bytes
+               9 Dir(s)  38,392,598,528 bytes free
+
+C:\Users\Fussy\Documents\DojoAssignments>
