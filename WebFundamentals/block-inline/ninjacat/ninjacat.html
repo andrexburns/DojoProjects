@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dissapearing act</title>
+    <link rel="stylesheet" type="text/css" href="ninjacat.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.image').click(function() {
+          // console.log('data-alt-src value is'());
+            $(this).attr("src",$(this).attr('data-alt-src'));
+          });
+        });
+    </script>..
+</head>
+<body>
+  <div>
+      <img class="image" src="http://i.imgur.com/AXPDoSV.png" data-alt-src='http://i.imgur.com/yQwXzrl.png' />
+      <img class="image" src="http://i.imgur.com/RlXfM5M.png" data-alt-src='http://i.imgur.com/Netajoq.png' />
+      <img class="image" src="http://i.imgur.com/C4M6luW.png" data-alt-src='http://i.imgur.com/esFy9zh.png' />
+      <img class="image" src="http://i.imgur.com/KR7zUDR.png" data-alt-src='http://i.imgur.com/wLDxKv6.png' />
+  </div>
+
+
+  </body>
+</html>

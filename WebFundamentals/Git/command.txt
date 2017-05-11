@@ -1,0 +1,13 @@
+windows+R
+cd desktop
+md test
+copy nul
+cd test
+git init
+git commit -m "testing"
+git add
+git commit -m "updated aboutme.txt"
+git add
+git commit -m "updated movie on aboutmetxt"
+git revert -n
+git commit ""

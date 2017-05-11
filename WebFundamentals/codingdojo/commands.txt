@@ -1,0 +1,13 @@
+start .
+md
+cd
+copy nul
+rd
+copy
+cd..
+dir
+help
+del
+move
+rd
+rd/s

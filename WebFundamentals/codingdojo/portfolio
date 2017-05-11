@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>portfolio</title>
+  </head>
+  <body>
+    <div id = 'wrapper'>
+      <div id= "img">
+        <img src="" ></img>
+      </div>
+      <div id = "about">
+        <h3> About </h3>
+        <p> Hello i am a coding dojo student learning how to code!
+          i will be catching up on all my assignments and learning vocabulary.
+          all and all i must  learn how to study, i am a smart man and i can learn anything
+          i will suceed even though i have slacker tendencies i can still thrive by just being me.
+          assertiveness isnt lost in this young boy.
+      </div>
+      <div id = "bottom">
+        <h3 class = "la mode">La Mode</h3>
+          <img src = "" ></img>
+          <p> la mode is "the mode" in french. the only thing i cam to find out about
+          french people is that they are expensive. i dunno if its the exotic sound of there curencey
+          "euro" or what but ddaaaayyuum.......</p>
+        <h3 class = "techno">Technologies</h3>
+          <img src = ""></img>
+          <img src = ""></img>
+          <img src = ""></img>
+          <img src = ""></img>
+          <img src = ""></img>
+          <img src = ""></img>
+          <img src = ""></img>
+
+      </div>
+    </div>
+
+  </body>
+</html>

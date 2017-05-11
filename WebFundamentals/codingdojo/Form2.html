@@ -1,0 +1,54 @@
+<form action="process.php" method="post">
+  <form>
+      <p>Please Register</p>
+      <label>
+          Name:<input type="text" name="name">
+      </label>
+      <label>
+        date of birth:<input type="text" name="date_of_birth">
+      </label>
+      <p>Select your gender:</p>
+      <label>
+         Male<input type="radio" name="gender" value="male">
+      </label>
+      <label>
+         Female<input type="radio" name="gender" value="female">
+      </label>
+      <label>
+        other<input type="radio" name="gender" value="other">
+      </label>
+      <p>For security, enter your password.</p>
+      <label>
+          Password:<input type="password" name="password">
+      </label>
+    <p>pick yo favorite two colors maaaan!!!!!:</p>
+    <label for="blue">Blue</label>
+    <input type="checkbox" id="blue" name="color" value="blue">
+
+    <label for="green">Green</label>
+    <input type="checkbox" id="green" name="color" value="green">
+
+    <label for="red">Red</label>
+    <input type="checkbox" id="red" name="color" value="red">
+
+    <label for="black">Black</label>
+    <input type="checkbox" id="black" name="color" value="black">
+
+    <label for="orange">orange</label>
+    <imput type="checkbox" id="orange" name="color" value="orange">
+
+<p>tell us about yourself:</p>
+    <textarea name="description"></textarea>
+  <p>your favorite language:</p>
+  <select name="favorite_language">
+    <option value="english">english</option>
+    <option value="spanish">spanish</option>
+    <option value="french">french</option>
+    <option value="swahili">swahili</option>
+    <option value="tagalog">tagalog</option>
+  </select>
+    <div>
+      <p>verify and then submit:</p>
+      <input type="submit" value="toggle here to submit">
+    </div>
+  </form>
